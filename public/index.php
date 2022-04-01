@@ -1,9 +1,11 @@
 <?php
 
-if (PHP_MAJOR_VERSION < 8) {
-  die('PHP version >= 8 is required!');
-}
+use core\App;
 
 require '../config/init.php';
+
+new App();
+
+throw new Exception('Some error', 404);
 
 ?>

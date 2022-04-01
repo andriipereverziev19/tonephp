@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "tonephp\\": "core",
+      "core\\": "core",
       "app\\": "app"
     } 
   },

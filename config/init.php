@@ -1,5 +1,9 @@
 <?php
 
+if (PHP_MAJOR_VERSION < 8) {
+  die('PHP version >= 8 is required!');
+}
+
 function siteUrl() {
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
     $domainName = $_SERVER['HTTP_HOST'];

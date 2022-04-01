@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'tonephp\\' => array($baseDir . '/core'),
+    'core\\' => array($baseDir . '/core'),
     'app\\' => array($baseDir . '/app'),
 );
